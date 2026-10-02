@@ -1,5 +1,5 @@
 from gestionar_json import generar_id, reemplazar, cargar
-from validaciones import validar_texto, validar_entero
+from validaciones import validar_texto, validar_entero, validar_documento
 NOMBRE_ARCHIVO="instructores.json"
 def agregar_instructor():
     lista_instructores=[]
@@ -7,7 +7,7 @@ def agregar_instructor():
     instructor={}
     instructor["id"]=generar_id(lista_instructores)
     instructor["nombre"]=validar_texto("Ingrese el nombre del instructor: ")
-    instructor["documento"]=validar_entero("ingrese su documento: ")
+    instructor["documento"]=validar_documento("ingrese su documento: ")
     instructor["tipo de vehiculo"]=validar_texto("Ingrese el vehiculo experto ejp:(carro o moto): ")
     instructor["estado"]=validar_texto('Ingrese su estado ejp: ocupado o disponible: ')
     lista_instructores.append(instructor)

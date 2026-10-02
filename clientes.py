@@ -1,5 +1,5 @@
 from gestionar_json import generar_id, reemplazar, cargar
-from validaciones import validar_texto, validar_entero
+from validaciones import validar_texto, validar_entero, validar_documento
 NOMBRE_ARCHIVO="clientes.json"
 def agregar_cliente():
     lista_clientes=[]
@@ -7,7 +7,7 @@ def agregar_cliente():
     cliente={}
     cliente["id"]=generar_id(lista_clientes)
     cliente["nombre"]=validar_texto("Ingrese el nombre del cliente: ")
-    cliente["documento"]=validar_entero("ingrese su documento: ")
+    cliente["documento"]=validar_documento("ingrese su documento: ")
     cliente["tipo de vehiculo"]=validar_texto("Ingrese el vehiculo: ")
     lista_clientes.append(cliente)
     reemplazar(NOMBRE_ARCHIVO, lista_clientes)

@@ -1,13 +1,7 @@
 [
     {
         "id": 1,
-        "tipo de veiculo": "moto",
-        "placa": "Ingrese la placa del vehiculo: ",
-        "estado": "disponible"
-    },
-    {
-        "id": 2,
-        "tipo de veiculo": "moto",
+        "tipo_de_vehiculo": "moto",
         "placa": "Ingrese la placa del vehiculo: ",
         "estado": "disponible"
     }

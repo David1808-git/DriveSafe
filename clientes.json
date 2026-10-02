@@ -1,26 +1,14 @@
 [
     {
         "id": 1,
-        "nombre": "David",
+        "nombre": "david",
         "documento": 1097500752,
         "tipo de vehiculo": "moto"
     },
     {
         "id": 2,
         "nombre": "felipe",
-        "documento": 1098641993,
-        "tipo de vehiculo": "carro"
-    },
-    {
-        "id": 3,
-        "nombre": "andres",
-        "documento": 1226583421,
+        "documento": 1097500752,
         "tipo de vehiculo": "moto"
-    },
-    {
-        "id": 4,
-        "nombre": "julian",
-        "documento": 18255,
-        "tipo de vehiculo": "carro"
     }
 ]

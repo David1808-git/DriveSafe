@@ -1,5 +1,5 @@
 from validaciones import validar_entero
-from menu_auxiliar import menu_administrador, menu_cliente
+from menu_auxiliar import menu_administrador, menu_cliente, menu_instructor
 from citas import listar_cita
 def menu():
     while(True):
@@ -20,9 +20,18 @@ def menu():
                 print("clave correcta bienvenido")
                 menu_administrador()
             case 2:
-                print('Bienvenido al sistema')
-               
+                clave=2008
+                ingreso=validar_entero("ingrese la clave del instructor: ")
+                while ingreso!= clave:
+                    ingreso=validar_entero("clave incorrecta intente nuevamente: ")
+                print("clave correcta bienvenido")
+                menu_instructor()
             case 3:
+                clave=5678
+                ingreso=validar_entero("ingrese la clave del cliente: ")
+                while ingreso!= clave:
+                    ingreso=validar_entero("clave incorrecta intente nuevamente: ")
+                
                 menu_cliente()
                
             case 4:

@@ -19,5 +19,12 @@ def validar_texto(mensaje):
     return dato
 documentos = set() #Almacena la informacion para que no se repita
 def validar_documento(mensaje):
-    if documentos.exist:
-        input('el ')
+    dato = input(mensaje).strip()
+    while not ((dato.isdigit) and 6 <= len(dato) <= 10 and dato[0] != '0' and len(set(dato)) > 1):
+        dato = input('Documento incorrecto (solo numeros, de 6 a 10 digitos, sin empezar en 0): ').strip()
+    return int(dato)
+def validar_placa(mensaje):
+    dato = input(mensaje).strip().upper()
+    while not (dato.isalnum() and 5 <= len(dato) <= 7):
+        dato = input('Placa incorrecta (5 a 7 letras o numeros): ').strip().upper()
+    return dato

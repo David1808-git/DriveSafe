@@ -1,13 +1,13 @@
 from gestionar_json import generar_id, reemplazar, cargar
-from validaciones import validar_texto, validar_entero
+from validaciones import validar_texto, validar_entero, validar_placa
 NOMBRE_ARCHIVO="vehiculos.json"
 def agregar_vehiculo():
     lista_vehiculos=[]
     lista_vehiculos=cargar(NOMBRE_ARCHIVO)
     vehiculos={}
     vehiculos["id"]=generar_id(lista_vehiculos)
-    vehiculos["tipo  vehiculo"]=validar_texto('Ingrese el tipo de vehiculo ejp: Carro o Moto: ')
-    vehiculos["placa"]=('Ingrese la placa del vehiculo: ')
+    vehiculos["tipo_de_vehiculo"]=validar_texto('Ingrese el tipo de vehiculo ejp: Carro o Moto: ')
+    vehiculos["placa"]=validar_placa('Ingrese la placa del vehiculo: ')
     vehiculos["estado"]=validar_texto('Ingrese el estado del vehiculo: ')
     lista_vehiculos.append(vehiculos)
     reemplazar(NOMBRE_ARCHIVO, lista_vehiculos)
@@ -46,7 +46,7 @@ def listar_vehiculos():
             print(f'''
                 ********************
                 ID:         {elemento.get("id", "La clave id no existe")}
-                Tipo vehiculo:     {elemento.get("tipo de vehiculo", "La clave tipo de vehiculo no existe")}
+                Tipo_de_vehiculo:     {elemento.get("tipo de vehiculo", "La clave tipo de vehiculo no existe")}
                 Placa: {elemento.get('placa', 'la clave placa no existe')}
                 Estado: {elemento.get("estado", 'la calve estado no existe')}
             ''')
