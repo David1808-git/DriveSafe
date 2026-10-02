@@ -18,5 +18,17 @@
         "hora": "01:30",
         "duracion": 120,
         "estado": "pendiente"
+    },
+    {
+        "id": 5,
+        "id_cliente": 2,
+        "id_instructor": 2,
+        "tipo_vehiculo": "1",
+        "fecha": "03/10/2026",
+        "hora": "13:30",
+        "duracion": 60,
+        "estado": "pendiente",
+        "Observaciones": " en espera",
+        "observaciones": "en uso"
     }
 ]

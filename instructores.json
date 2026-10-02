@@ -5,5 +5,12 @@
         "documento": 455687,
         "tipo de vehiculo": "moto",
         "estado": "disponible"
+    },
+    {
+        "id": 2,
+        "nombre": "julian",
+        "documento": 123654,
+        "tipo de vehiculo": "moto",
+        "estado": "disponible"
     }
 ]

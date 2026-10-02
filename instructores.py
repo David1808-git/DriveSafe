@@ -29,7 +29,7 @@ def actualizar_instructor(id):
                     
                     case _:
                         print("Opcion no correcta, operación cancelada!")
-def eliminar_instructor(id):
+def eliminar_instructor():
     validacion=False
     lista_instructores=cargar(NOMBRE_ARCHIVO)
     for i,elemento in enumerate(lista_instructores): #recorre los diccionarios que contiene la lista

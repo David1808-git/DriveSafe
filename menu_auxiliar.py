@@ -28,12 +28,14 @@ def menu_administrador():
                         agregar_cliente()
                     case 2:
                         listar_cliente()
-                        actualizar_cliente()
+                        id = validar_entero("Ingrese el ID del instructor que desea actualizar: ")
+                        actualizar_cliente(id)
                     case 3:
                         listar_cliente()
                     case 4:
                         listar_cliente()
-                        eliminar_cliente()
+                        id = validar_entero("Ingrese el ID del instructor que desea eliminar: ")
+                        eliminar_cliente(id)
                     case 5:
                         print('Regresando....')
                         break
@@ -53,12 +55,14 @@ def menu_administrador():
                         agregar_instructor()
                     case 2:
                         listar_instructor()
-                        actualizar_instructor()
+                        id = validar_entero("Ingrese el ID del instructor que desea actualizar: ")
+                        actualizar_instructor(id)
                     case 3:
                         listar_instructor()
                     case 4: 
                         listar_instructor()
-                        eliminar_instructor()
+                        id = validar_entero("Ingrese el ID del instructor que desea eliminar: ")
+                        eliminar_instructor(id)
                     case 5:
                         print('Regresando....')
                         break
@@ -86,6 +90,7 @@ def menu_administrador():
                         listar_cita()
                     case 4: 
                         listar_cita()
+                        id = validar_entero("Ingrese el ID del instructor que desea eliminar: ")
                         eliminar_cita()
                     case 5:
                         print('Regresando....')

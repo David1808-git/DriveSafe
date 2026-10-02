@@ -58,10 +58,7 @@ def actualizar_cita():
 
     for cita in citas:
         if cita["id"] == id_cita:
-            cita["fecha"] = input("Nueva fecha: ")
-            cita["hora"] = input("Nueva hora: ")
-            cita["estado"] = input("Nuevo estado: ")
-            cita["observaciones"]= input("Ingrese las observaciones")
+            cita["observaciones"]= input("Ingrese las observaciones: ")
 
             reemplazar("citas.json", citas)
 
