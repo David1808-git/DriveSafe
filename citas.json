@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "nombre": "David",
+        "documento": 158555,
+        "tipo vehiculo": "moto"
+    },
+    {
+        "id": 2,
+        "nombre": "felipe",
+        "documento": 878978,
+        "tipo vehiculo": "moto",
+        "descripcion": "ninguna"
+    },
+    {
+        "id": 3,
+        "id_cliente": 1,
+        "id_instructor": 1,
+        "fecha": "12/09/2026",
+        "hora": "2:00",
+        "estado": "pendiente"
+    }
+]

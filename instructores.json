@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "nombre": "david",
+        "documento": 455687,
+        "tipo de vehiculo": "moto",
+        "estado": "disponible"
+    }
+]
